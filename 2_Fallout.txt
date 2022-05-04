@@ -1,0 +1,2 @@
+Inside console, just execute 'await contract.Fal1out({from: player})'
+=> Notice that there is typepo in constructor, 'Fallout' not 'Fal1out'

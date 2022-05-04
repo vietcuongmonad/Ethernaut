@@ -1,0 +1,14 @@
+How to send ether when interacting with an ABI
+=> https://ethereum.stackexchange.com/questions/53094/sending-ether-via-contract-instance
+
+Solution: 
+
+1) await contract.contribute({from: player, value: toWei('0.0001')})
+=> see receive() function, we can execute that if contributions[msg.sender] has some value
+=> execute contribute() function
+
+2) await web3.eth.sendTransaction({from: player, to: instance, value: '1'})
+=> execute receive() function
+
+3) await contract.withdraw()
+=> reduce balance to 0
