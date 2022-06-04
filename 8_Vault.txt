@@ -1,0 +1,10 @@
+Solution: 'await web3.eth.getStorageAt(instance, 1)'
+
+=> Get content of the slot 1 in storage, which is the variable 'password'
+
+Notes:
+
+- Marking a variable as private only prevent other contracts from accessing it
+State variables marked as private & local variables are still publicly accessible
+
+- To ensure that data is private, it needs to be encrypted before being put on blockchain. zkSNARKs (https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/) provide a way to determine whether someone possesses secret parameter, without ever having to reveal parameter
